@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "mle-recsys-start"
+version = "0.1.0"
+description = ""
+authors = ["Evgeniy Medvedev <3326150+sorlandet@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+# Machine Learning
+catboost = "1.2.2"           # High-performance gradient boosting library
+scikit-learn = "1.3.2"       # Comprehensive machine learning algorithms
+
+# Recommender Systems
+implicit = "0.7.2"           # Fast recommendation algorithms for collaborative filtering
+lightfm = { git = "https://github.com/daviddavo/lightfm" }  # Hybrid recommendation models with metadata
+scikit-surprise = "^1.1.4"   # Specialized library for building recommender systems
+
+# Data Manipulation and Analysis
+pandas = "2.1.1"             # Powerful data manipulation and analysis library
+pyarrow = "13.0.0"           # Efficient in-memory data handling with Apache Arrow
+
+# Data Visualization
+seaborn = "^0.13.2"          # Statistical data visualization library
+
+# Web Development
+fastapi = "0.104.1"          # Modern, fast web framework for building APIs
+uvicorn = "0.24.0.post1"     # Lightning-fast ASGI server for Python
+requests = "2.31.0"          # Simple and elegant HTTP library for Python
+
+# Development Tools
+jupyterlab = "^4.3.0"        # Interactive development environment for notebooks, code, and data
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
